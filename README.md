@@ -1,44 +1,19 @@
-Various types of gradient descent algorithm applied to CNN Architecture and its effect on training loss
+# Gradient Descent Optimization in CNNs for Image Classification
 
-Gradient Descent Algorithms in CNN for Image Classification
-Objective
-This project investigates the performance of various gradient descent optimization algorithms when applied to a Convolutional Neural Network (CNN) architecture for image classification tasks. The study focuses on analyzing how different optimizers affect the training loss dynamics and the model's convergence behavior.
+A simple comparative study of gradient descent variants and their effects on training loss in convolutional neural networks for image classification tasks.
 
-Implemented Optimization Algorithms
-The project includes implementations and comparisons of the following gradient descent variants:
+## Objectives
+- Implement and analyze 6 gradient descent optimization algorithms
+- Evaluate their impact on training loss convergence
+- Compare performance across standard image classification datasets
 
-Stochastic Gradient Descent (SGD)
+## Implemented Optimizers
 
-Basic gradient descent with optional momentum
-
-Simple but effective baseline for comparison
-
-RMSprop
-
-Adapts learning rates by dividing by root mean squared gradients
-
-Good for non-stationary objectives
-
-Nesterov Accelerated Gradient (NAG)
-
-"Looks ahead" to adjust momentum more effectively
-
-Often provides faster convergence than standard momentum
-
-Adagrad
-
-Adapts learning rates to parameters based on historical gradients
-
-Performs well for sparse data
-
-Adam (Adaptive Moment Estimation)
-
-Combines ideas from RMSprop and momentum
-
-Computes adaptive learning rates for each parameter
-
-AdamW
-
-Adam with decoupled weight decay regularization
-
-Often provides better generalization than standard Adam
+| Optimizer       | Key Characteristics                          | Best For                      |
+|-----------------|---------------------------------------------|------------------------------|
+| **SGD**         | Vanilla gradient descent with momentum      | Baseline comparisons          |
+| **RMSprop**     | Root Mean Square propagation                | Non-stationary objectives     |
+| **Nesterov**    | Momentum with look-ahead correction         | Faster convergence            |
+| **Adagrad**     | Parameter-specific learning rates           | Sparse data                   |
+| **Adam**        | Adaptive Moment Estimation                  | General purpose               |
+| **AdamW**       | Adam with decoupled weight decay            | Better generalization         |
